@@ -1,34 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="script.logviewer" name="Log Viewer for Kodi" provider-name="i96751414" version="2.1.8+matrix.1">
+<addon id="script.logviewer" name="Log Viewer for Kodi" provider-name="i96751414" version="3.0.0+matrix.1">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
     <extension point="xbmc.python.script" library="default.py">
         <provides>executable</provides>
     </extension>
-    <extension point="xbmc.service" library="service.py"/>
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
-        <forum>https://forum.kodi.tv/showthread.php?tid=223490</forum>
         <source>https://github.com/i96751414/script.logviewer</source>
-        <summary lang="en_GB">View Kodi logfile directly on Kodi</summary>
-        <summary lang="pt_PT">Veja o log do Kodi directamente no Kodi</summary>
-        <summary lang="sv_SE">Visa Kodi-loggfilen direkt i Kodi</summary>
-        <description lang="en_GB">Tools to easily check and analyse Kodi log file.</description>
-        <description lang="pt_PT">Ferramenta para verificar e ler facilmente o log do Kodi.</description>
-        <description lang="sv_SE">Verktyg för att enkelt kontrollera och analysera Kodi-loggfiler.</description>
-        <platform>all</platform>
-        <news>
-- Make text window skin independent
-- Improve HTTP server
-        </news>
+        <summary lang="en_GB">Stream command output directly on Kodi</summary>
+        <description lang="en_GB">Run any shell command and stream its output in a full-screen text window with live updates. Useful for tailing logs, docker container output, etc.</description>
         <assets>
             <icon>icon.png</icon>
-            <screenshot>resources/images/screenshot-1.jpg</screenshot>
-            <screenshot>resources/images/screenshot-2.jpg</screenshot>
-            <screenshot>resources/images/screenshot-3.jpg</screenshot>
         </assets>
     </extension>
 </addon>
